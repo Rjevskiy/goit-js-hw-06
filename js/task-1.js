@@ -1,13 +1,48 @@
+const books = [
+  {
+    title: "The Last Kingdom",
+    author: "Bernard Cornwell",
+    rating: 8.38,
+  },
+  {
+    title: "Beside Still Waters",
+    author: "Robert Sheckley",
+    rating: 8.51,
+  },
+  {
+    title: "The Dream of a Ridiculous Man",
+    author: "Fyodor Dostoevsky",
+    rating: 7.75,
+  },
+  {
+    title: "Redder Than Blood",
+    author: "Tanith Lee",
+    rating: 7.94,
+  },
+  {
+    title: "Enemy of God",
+    author: "Bernard Cornwell",
+    rating: 8.67,
+  },
+];
 
 
 
-const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
-
-const evenNumbers = numbers.filter(numbers => numbers );
-const oddNumbers = numbers.filter(numbers => numbers % 2);
+const sortedByAuthorName = [...books].toSorted((a, b) => a.author.localeCompare(b.author));
 
 
+const sortedByReversedAuthorName = [...books].toSorted((a, b) => b.author.localeCompare(a.author));
 
-// Значення змінної evenNumbers - це масив [24, 82, 36, 18, 52]
+const sortedByAscendingRating = [...books].toSorted((a, b) => a.rating - b.rating);
 
-// Значення змінної oddNumbers - це масив [17, 61, 47, 73]
+
+
+
+const sortedByDescentingRating = [...books].toSorted((a, b) => b.rating - a.rating);
+
+
+
+console.log(sortedByAuthorName);
+console.log(sortedByReversedAuthorName);
+console.log(sortedByAscendingRating);
+console.log(sortedByDescentingRating);
