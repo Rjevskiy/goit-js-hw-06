@@ -1,48 +1,31 @@
-const books = [
-  {
-    title: "The Last Kingdom",
-    author: "Bernard Cornwell",
-    rating: 8.38,
-  },
-  {
-    title: "Beside Still Waters",
-    author: "Robert Sheckley",
-    rating: 8.51,
-  },
-  {
-    title: "The Dream of a Ridiculous Man",
-    author: "Fyodor Dostoevsky",
-    rating: 7.75,
-  },
-  {
-    title: "Redder Than Blood",
-    author: "Tanith Lee",
-    rating: 7.94,
-  },
-  {
-    title: "Enemy of God",
-    author: "Bernard Cornwell",
-    rating: 8.67,
-  },
-];
+// const customer = {
+//   username: "Mango",
+//   balance: 24000,
+//   discount: 0.1,
+//   orders: ["Burger", "Pizza", "Salad"],
+//   // Change code below this line
+  
+//   getBalance() {
+//     return this.balance;
+//   },
+//   getDiscount() {
+//     return this.discount;
+//   },
+//   setDiscount(value) {
+//     this.discount = value;
+//   },
+//   getOrders() {
+//     return this.orders;
+//   },
+//   addOrder(cost, order) {
+//     this.balance -= cost - cost * this.discount;
+//     this.orders.push(order);
+//   },
+//   // Change code above this line
+// };
 
-
-
-const sortedByAuthorName = [...books].toSorted((a, b) => a.author.localeCompare(b.author));
-
-
-const sortedByReversedAuthorName = [...books].toSorted((a, b) => b.author.localeCompare(a.author));
-
-const sortedByAscendingRating = [...books].toSorted((a, b) => a.rating - b.rating);
-
-
-
-
-const sortedByDescentingRating = [...books].toSorted((a, b) => b.rating - a.rating);
-
-
-
-console.log(sortedByAuthorName);
-console.log(sortedByReversedAuthorName);
-console.log(sortedByAscendingRating);
-console.log(sortedByDescentingRating);
+// customer.setDiscount(0.15);
+// console.log(customer.getDiscount()); // 0.15
+// customer.addOrder(5000, "Steak");
+// console.log(customer.getBalance()); // 19750
+// console.log(customer.getOrders()); // ["Burger", "Pizza", "Salad", "Steak"]
